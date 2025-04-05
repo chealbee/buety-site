@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  let menuClass = menuOpen ? "header" : "header BurgerMenuOpen";
+  let menuClass = menuOpen ? "header BurgerMenuOpen" : "header";
   return (
     <header className={menuClass}>
       <div className="maincontainer">

@@ -9,4 +9,6 @@
 .maincontainer {
   max-width: 1650px;
   width: 100%;
+  @include adaptiveValue("margin-left", 137, 20, 0, 1920, 768);
+  @include adaptiveValue("margin-right", 137, 20, 0, 1920, 768);
 }

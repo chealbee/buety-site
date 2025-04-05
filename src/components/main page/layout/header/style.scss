@@ -3,8 +3,6 @@
 .header {
   display: flex;
   justify-content: center;
-  @include adaptiveValue("margin-left", 137, 20, 0, 1920, 768);
-  @include adaptiveValue("margin-right", 137, 20, 0, 1920, 768);
 
   &__top {
     display: flex;
@@ -27,8 +25,8 @@
       z-index: 10;
       cursor: pointer;
       font-size: 0px;
-      @include adaptiveValue("width", 58, 40, 0, 1920, 320);
-      @include adaptiveValue("height", 40, 32, 0, 1920, 320);
+      @include adaptiveValue("width", 58, 35, 0, 1920, 320);
+      @include adaptiveValue("height", 40, 27, 0, 1920, 320);
       position: relative;
       &::after,
       &::before,
