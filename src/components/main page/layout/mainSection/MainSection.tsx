@@ -8,6 +8,19 @@ const MainSection = () => {
         <h1>
           <span>black li</span>
           <span>beauty salon</span>
+          <div className="decorSection">
+            <Image
+              className="decorImage"
+              alt="decor image"
+              src={"/women.png"}
+              width={907}
+              height={480}
+            />
+            <a href="#">
+              Що ми робимо ?{" "}
+              <Image alt="arow" src={"/roundArow.png"} width={33} height={33} />
+            </a>
+          </div>
         </h1>
         <div className="mainSection__textContent">
           <p>
