@@ -1,8 +1,13 @@
 @import "@/styles/base/mixins.scss";
 
 .mainSection {
-  @include adaptiveValue("margin-top", 100, 19, 0, 1920, 400);
-  margin-bottom: 1000px;
+  min-height: calc(100dvh - 112px - 50px); /* якщо хедер має 60px */
+  @media (max-width: 500px) {
+    min-height: calc(100dvh - 63px - 50px); /* якщо хедер має 60px */
+  }
+
+  margin-top: 50px;
+  @include adaptiveValue("margin-bottom", 200, 100, 0, 1920, 1200);
 
   display: flex;
   justify-content: center;
