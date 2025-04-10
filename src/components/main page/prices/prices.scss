@@ -1,7 +1,8 @@
 @import "@/styles/base/mixins.scss";
 
 .prices {
-  padding-bottom: 1000px;
+  //   padding-bottom: 1000px;
+  @include adaptiveValue("margin-bottom", 170, 130, 0, 1920, 400);
   display: flex;
   justify-content: center;
   align-items: center;
