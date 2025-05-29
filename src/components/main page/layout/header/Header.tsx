@@ -19,10 +19,26 @@ const Header = () => {
               <div className="burgerLine"></div>
             </button>
             <ul>
-              <li>ціни та послуги</li>
-              <li>про нас</li>
-              <li>наші роботи</li>
-              <li>контакти</li>
+              <li>
+                <a href="#section-prices" onClick={() => setMenuOpen(false)}>
+                  ціни та послуги
+                </a>
+              </li>
+              <li>
+                <a href="#section-about" onClick={() => setMenuOpen(false)}>
+                  про нас
+                </a>
+              </li>
+              <li>
+                <a href="#section-works" onClick={() => setMenuOpen(false)}>
+                  наші роботи
+                </a>
+              </li>
+              <li>
+                <a href="#section-contacts" onClick={() => setMenuOpen(false)}>
+                  контакти
+                </a>
+              </li>
             </ul>
           </nav>
           <div className="instagramLink">

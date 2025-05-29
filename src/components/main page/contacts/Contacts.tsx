@@ -3,7 +3,7 @@ import "./styles.scss";
 
 const Contacts = () => {
   return (
-    <section className="contacts">
+    <section className="contacts" id="section-contacts">
       <div className="contacts__topSection">
         <div className="contacts__topSection_left">
           <h4>Де ми знаходимось?</h4>

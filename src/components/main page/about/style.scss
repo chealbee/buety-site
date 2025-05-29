@@ -1,5 +1,9 @@
 @import "@/styles/base/mixins.scss";
 
+#section-about {
+  scroll-margin-top: 100px;
+}
+
 .aboutSection {
   display: flex;
   justify-content: center;

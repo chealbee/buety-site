@@ -3,7 +3,7 @@ import "./style.scss";
 
 const About = () => {
   return (
-    <section className="aboutSection">
+    <section className="aboutSection" id="section-about">
       <h3>
         <span>більше</span>
         <span>про нас</span>

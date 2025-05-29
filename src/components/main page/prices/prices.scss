@@ -1,5 +1,9 @@
 @import "@/styles/base/mixins.scss";
 
+#section-prices {
+  scroll-margin-top: 100px;
+}
+
 .prices {
   //   padding-bottom: 1000px;
   @include adaptiveValue("margin-bottom", 170, 130, 0, 1920, 400);

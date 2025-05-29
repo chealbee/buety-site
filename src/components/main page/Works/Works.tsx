@@ -44,7 +44,7 @@ const But = () => {
 
 const Works = () => {
   return (
-    <section className="workSewction">
+    <section className="workSewction" id="section-works">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}

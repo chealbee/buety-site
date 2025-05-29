@@ -1,5 +1,9 @@
 @import "@/styles/base/mixins.scss";
 
+#section-contacts {
+  scroll-margin-top: 100px;
+}
+
 .contacts {
   max-width: 1663px;
   padding: 0 30px;
