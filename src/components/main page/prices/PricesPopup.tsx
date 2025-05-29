@@ -1,21 +1,18 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import "./prices.scss";
-import PricesPopup from "./PricesPopup";
 
-const Prices = () => {
-  const [showPopup, setShowPopup] = useState(false);
+interface PricesPopupProps {
+  onClose: () => void;
+}
+
+const PricesPopup: React.FC<PricesPopupProps> = ({ onClose }) => {
   return (
-    <section className="prices" id="section-prices">
-      <div className="maincontainer">
-        <div className="prices__textSection">
-          <h3 className="prices__textSection_big">наші</h3>
-          <h3 className="prices__textSection_smal">послуги та ціни</h3>
-          <p>
-            Перманентний макіяж для бездоганної краси щодня! Професійно,
-            безпечно, індивідуально.
-          </p>
-        </div>
+    <div className="prices__popupOverlay" onClick={onClose}>
+      <div className="prices__popup" onClick={(e) => e.stopPropagation()}>
+        <button className="prices__popupClose" onClick={onClose}>
+          &times;
+        </button>
+        <h3 className="prices__popupTitle">Всі послуги</h3>
         <ul className="prices__prices">
           <li className="prices__price">
             <p>
@@ -55,16 +52,9 @@ const Prices = () => {
             </p>
           </li>
         </ul>
-        <button
-          className="prices__showMoreButton"
-          onClick={() => setShowPopup(true)}
-        >
-          показати всі послуги
-        </button>
-        {showPopup && <PricesPopup onClose={() => setShowPopup(false)} />}
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Prices;
+export default PricesPopup;
