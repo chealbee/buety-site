@@ -31,7 +31,10 @@ const Contacts = () => {
           </ul>
         </div>
       </div>
-      <h3>{data.title}</h3>
+      <div className="contacts__titleWrapper">
+        <h3>{data.title}</h3>
+        <span className="contacts__decorCircle"></span>
+      </div>
     </section>
   );
 };
