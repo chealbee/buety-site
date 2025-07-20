@@ -1,24 +1,20 @@
 import React from "react";
 import "./style.scss";
+import aboutData from "../../../aboutData.json";
 
 const About = () => {
+  const data = aboutData;
   return (
     <section className="aboutSection" id="section-about">
       <h3>
-        <span>більше</span>
-        <span>про нас</span>
+        <span>{data.title}</span>
+        <span>{data.subtitle}</span>
       </h3>
       <div className="aboutSection__textP">
-        <p>
-          Перманентний макіяж для бездоганної краси щодня! Професійно, безпечно,
-          індивідуально. Довіртеся майстрам, які підкреслять вашу природну
-          чарівність!
-        </p>
-        <p>
-          Перманентний макіяж для бездоганної краси щодня! Професійно, безпечно,
-          індивідуально.
-        </p>
-        <a href="">цікаво як виглядає наша робота ?</a>
+        {data.paragraphs.map((text, idx) => (
+          <p key={idx}>{text}</p>
+        ))}
+        <a href={data.linkHref}>{data.linkText}</a>
       </div>
     </section>
   );

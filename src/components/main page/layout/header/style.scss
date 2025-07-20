@@ -110,3 +110,15 @@
     left: 0;
   }
 }
+
+.BurgerMenuOpen {
+  /* Забороняємо скрол body, коли меню відкрито */
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  height: 100vh;
+}

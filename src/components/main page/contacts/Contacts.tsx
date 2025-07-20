@@ -1,48 +1,37 @@
 import React from "react";
 import "./styles.scss";
+import contactsData from "../../../contactsData.json";
 
 const Contacts = () => {
+  const data = contactsData;
   return (
     <section className="contacts" id="section-contacts">
       <div className="contacts__topSection">
         <div className="contacts__topSection_left">
           <h4>Де ми знаходимось?</h4>
           <ul>
-            <li>м. Київ, оболонь, грушевського 2</li>
-            <li>м. Вінниця, вишенька, грушевського 32</li>
+            {data.addresses.map((address, idx) => (
+              <a href={address.href} key={idx}>
+                <li>{address.text}</li>
+              </a>
+            ))}
           </ul>
         </div>
         <div className="contacts__topSection_right">
-          <h4>Ми завжди на зв’язку</h4>
+          <h4>{data.contactsTitle}</h4>
           <ul>
-            <li>
-              <a href="">
-                <span>[01]</span>
-                <span>instagram</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>[02]</span>
-                <span>facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>[03]</span>
-                <span>telegram</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>[04]</span>
-                <span>+380 95 798902</span>
-              </a>
-            </li>
+            {data.contacts.map((contact, idx) => (
+              <li key={idx}>
+                <a href={contact.href}>
+                  <span>[{contact.index}]</span>
+                  <span>{contact.label}</span>
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
-      <h3>Контакти</h3>
+      <h3>{data.title}</h3>
     </section>
   );
 };

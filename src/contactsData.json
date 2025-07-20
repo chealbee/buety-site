@@ -1,0 +1,19 @@
+{
+  "title": "Контакти",
+  "addresses": [
+    { "text": "м. Київ, оболонь, грушевського 2", "href": "" },
+    { "text": "м. Вінниця, вишенька, грушевського 32", "href": "" }
+  ],
+  "contactsTitle": "Ми завжди на зв’язку",
+  "contacts": [
+    { "type": "instagram", "label": "instagram", "href": "", "index": "01" },
+    { "type": "facebook", "label": "facebook", "href": "", "index": "02" },
+    { "type": "telegram", "label": "telegram", "href": "", "index": "03" },
+    {
+      "type": "phone",
+      "label": "+380 95 798902",
+      "href": "tel:+38095798902",
+      "index": "04"
+    }
+  ]
+}

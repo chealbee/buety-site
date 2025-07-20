@@ -1,0 +1,16 @@
+{
+  "menu": [
+    { "href": "#section-prices", "text": "ціни та послуги" },
+    { "href": "#section-about", "text": "про нас" },
+    { "href": "#section-works", "text": "наші роботи" },
+    { "href": "#section-contacts", "text": "контакти" }
+  ],
+  "instagram": {
+    "href": "#",
+    "text": "@_black_li__beauti_akademy ",
+    "logo": "/instalogo.png",
+    "logoAlt": "instagram logo",
+    "logoWidth": 39,
+    "logoHeight": 39
+  }
+}

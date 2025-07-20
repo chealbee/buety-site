@@ -167,11 +167,12 @@
     padding: 48px 52px 52px 52px;
     min-width: 320px;
     max-width: 95vw;
-    max-height: 80vh;
+    max-height: 90vh;
     position: relative;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
     display: flex;
     flex-direction: column;
+    overflow: auto;
     align-items: center;
   }
   &__popupClose {

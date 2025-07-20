@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import "./style.scss";
+import worksData from "../../../worksData.json";
 
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
@@ -43,8 +44,10 @@ const But = () => {
 };
 
 const Works = () => {
+  const data = worksData;
   return (
     <section className="workSewction" id="section-works">
+      <h3>{data.title}</h3>
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
@@ -55,117 +58,30 @@ const Works = () => {
         }}
       >
         <But />
-        <SwiperSlide>
-          <div className="workSewction__image">
-            <Image
-              alt="image of work"
-              src={"/women.png"}
-              width={1920}
-              height={1186}
-            />
-          </div>
-
-          <div className="workInfo">
-            <h4>Перманентний 123</h4>
-            <p>
-              Нещодавно відвідала салон краси, і залишилась дуже задоволена!
-              💆‍♀️✨Перш
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="workSewction__image">
-            <Image
-              alt="image of work"
-              src={"/image7.png"}
-              width={1920}
-              height={1186}
-            />
-          </div>
-          <div className="workInfo">
-            <h4>111 2103 123</h4>
-            <p>
-              три своєї справи, а й створюють неймовірно теплу атмосферу. Я
-              почувалася максимально комфортно протягом усього візиту.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="workSewction__image">
-            <Image
-              alt="image of work"
-              src={"/image7.png"}
-              width={1920}
-              height={1186}
-            />
-          </div>
-          <div className="workInfo">
-            <h4>Перманентний макіяж брів</h4>
-            <p>
-              Нещодавно відвідала салон краси, і залишилась дуже задоволена!
-              💆‍♀️✨Перш за все, хочеться відзначити привітний персонал – дівчата
-              не лише майстри своєї справи, а й створюють неймовірно теплу
-              атмосферу. Я почувалася максимально комфортно протягом усього
-              візиту.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="workSewction__image">
-            <Image
-              alt="image of work"
-              src={"/women.png"}
-              width={1920}
-              height={1186}
-            />
-          </div>
-
-          <div className="workInfo">
-            <h4>Перманентний 123</h4>
-            <p>
-              Нещодавно відвідала салон краси, і залишилась дуже задоволена!
-              💆‍♀️✨Перш
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="workSewction__image">
-            <Image
-              alt="image of work"
-              src={"/image7.png"}
-              width={1920}
-              height={1186}
-            />
-          </div>
-          <div className="workInfo">
-            <h4>111 2103 123</h4>
-            <p>
-              три своєї справи, а й створюють неймовірно теплу атмосферу. Я
-              почувалася максимально комфортно протягом усього візиту.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="workSewction__image">
-            <Image
-              alt="image of work"
-              src={"/image7.png"}
-              width={1920}
-              height={1186}
-            />
-          </div>
-          <div className="workInfo">
-            <h4>Перманентний макіяж брів</h4>
-            <p>
-              Нещодавно відвідала салон краси, і залишилась дуже задоволена!
-              💆‍♀️✨Перш за все, хочеться відзначити привітний персонал – дівчата
-              не лише майстри своєї справи, а й створюють неймовірно теплу
-              атмосферу. Я почувалася максимально комфортно протягом усього
-              візиту.
-            </p>
-          </div>
-        </SwiperSlide>
+        {data.slides.map((slide, idx) => (
+          <SwiperSlide key={idx}>
+            <div className="workSewction__image">
+              <Image
+                alt={slide.alt}
+                src={slide.image}
+                width={1920}
+                height={1186}
+              />
+            </div>
+            <div className="workInfo">
+              <h4>{slide.h4}</h4>
+              <p>{slide.p}</p>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
+      <div className="workSewction__moreLink">
+        <a href={data.moreButton.link}>
+          <button className="workSewction__moreButtont">
+            <span>{data.moreButton.text}</span>
+          </button>
+        </a>
+      </div>
     </section>
   );
 };
