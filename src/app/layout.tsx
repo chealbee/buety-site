@@ -26,30 +26,6 @@ export const metadata: Metadata = {
     "Салон краси Black Li Beauty: Київ, метро Оболонь, вул. Героїв полку Азов 12. Вінниця, вишенька, вул. Грушевського 32. Перманентний макіяж, професійні послуги, ціни, контакти, наші роботи.",
   keywords:
     "перманентний макіяж, салон краси, Київ, метро Оболонь, Героїв полку Азов 12, Вінниця, вишенька, Грушевського 32, ціни, контакти, роботи, beauty salon",
-  openGraph: {
-    title: "Black Li Beauty Salon",
-    description:
-      "Салон краси Black Li Beauty: Київ, метро Оболонь, вул. Героїв полку Азов 12. Вінниця, вишенька, вул. Грушевського 32. Перманентний макіяж для бездоганної краси щодня! Професійно, безпечно, індивідуально.",
-    url: "https://blackli.com.ua/",
-    siteName: "Black Li Beauty",
-    images: [
-      {
-        url: "/public/image7.png",
-        width: 1200,
-        height: 630,
-        alt: "Black Li Beauty Salon Київ Вінниця",
-      },
-    ],
-    locale: "uk_UA",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Black Li Beauty Salon",
-    description:
-      "Салон краси Black Li Beauty: Київ, метро Оболонь, вул. Героїв полку Азов 12. Вінниця, вишенька, вул. Грушевського 32. Перманентний макіяж для бездоганної краси щодня! Професійно, безпечно, індивідуально.",
-    images: ["/public/image7.png"],
-  },
   viewport: {
     width: "device-width",
     initialScale: 1,
