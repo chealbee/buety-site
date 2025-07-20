@@ -11,7 +11,7 @@ const Contacts = () => {
           <h4>Де ми знаходимось?</h4>
           <ul>
             {data.addresses.map((address, idx) => (
-              <a href={address.href} key={idx}>
+              <a href={address.href} key={idx} target="_blank">
                 <li>{address.text}</li>
               </a>
             ))}
@@ -22,7 +22,7 @@ const Contacts = () => {
           <ul>
             {data.contacts.map((contact, idx) => (
               <li key={idx}>
-                <a href={contact.href}>
+                <a href={contact.href} target="_blank">
                   <span>[{contact.index}]</span>
                   <span>{contact.label}</span>
                 </a>

@@ -1,8 +1,14 @@
 {
   "title": "Контакти",
   "addresses": [
-    { "text": "м. Київ, оболонь, грушевського 2", "href": "" },
-    { "text": "м. Вінниця, вишенька, грушевського 32", "href": "" }
+    {
+      "text": "м. Київ, оболонь, грушевського 2",
+      "href": "https://www.google.com/maps/place/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D0%BD%D1%8C,+%D0%9A%D0%B8%D1%97%D0%B2/@50.5088362,30.4261566,10051m/data=!3m2!1e3!4b1!4m10!1m2!2m1!1z0LwuINCa0LjRl9CyLCDQvtCx0L7Qu9C-0L3RjCwg0LPRgNGD0YjQtdCy0YHRjNC60L7Qs9C-IDI!3m6!1s0x40d4d2146b576c33:0xf10debc0e65558a5!8m2!3d50.5122535!4d30.4939596!15sCjjQvC4g0JrQuNGX0LIsINC-0LHQvtC70L7QvdGMLCDQs9GA0YPRiNC10LLRgdGM0LrQvtCz0L4gMpIBDG5laWdoYm9yaG9vZOABAA!16s%2Fg%2F120r4yrb?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+      "text": "м. Вінниця, вишенька, грушевського 32",
+      "href": "https://www.google.com/maps/place/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D0%BD%D1%8C,+%D0%9A%D0%B8%D1%97%D0%B2/@50.5088362,30.4261566,10051m/data=!3m2!1e3!4b1!4m10!1m2!2m1!1z0LwuINCa0LjRl9CyLCDQvtCx0L7Qu9C-0L3RjCwg0LPRgNGD0YjQtdCy0YHRjNC60L7Qs9C-IDI!3m6!1s0x40d4d2146b576c33:0xf10debc0e65558a5!8m2!3d50.5122535!4d30.4939596!15sCjjQvC4g0JrQuNGX0LIsINC-0LHQvtC70L7QvdGMLCDQs9GA0YPRiNC10LLRgdGM0LrQvtCz0L4gMpIBDG5laWdoYm9yaG9vZOABAA!16s%2Fg%2F120r4yrb?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
+    }
   ],
   "contactsTitle": "Ми завжди на зв’язку",
   "contacts": [
